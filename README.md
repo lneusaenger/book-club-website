@@ -1,0 +1,1 @@
+This is the repository for what will soon be the website for Duke's Book Club. It will keep members up to date on the current club readings, allow members to vote on future reads, and maintain an archive of books read in the past.
