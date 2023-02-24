@@ -1,28 +1,16 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import Navbar from '../components/Navbar';
 
-function Header({ title }) {
-  return <h1>{title ? title : 'Default title'}</h1>;
-}
 
 export default function HomePage() {
-  const names = ['He is very handsome', 'He gives many kisses', 'He is the silliest goose.'];
-
-  const [likes, setLikes] = useState(0);
-
-  function handleClick() {
-    setLikes(likes + 1);
-  }
-
+  const router = useRouter();
   return (
-    <div>
-      <Header title="Why I love Sam" />
-      <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
-      </ul>
-
-      <button onClick={handleClick}>Like ({likes})</button>
-    </div>
+    <>
+      <Navbar />
+      <div className = "welcome">
+        Welcome to Duke's Extremely Pretentious Book Club
+        </div>
+    </>
   );
 }
