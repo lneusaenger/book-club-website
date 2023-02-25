@@ -9,7 +9,12 @@ export default function HomePage() {
     <>
       <Navbar />
       <div className = "welcome">
-        Welcome to Duke's Extremely Pretentious Book Club
+      <div className = "container-welcome">
+        <img className = "welcome-img" src = "https://cdn.pixabay.com/photo/2017/08/21/04/13/books-2664021_960_720.png"></img>
+        </div>
+        <div className = "welcome-message">
+          <h1 className = "message">DUKE'S EXTREMELY PRETENIOUS BOOK CLUB</h1>
+        </div>
         </div>
     </>
   );

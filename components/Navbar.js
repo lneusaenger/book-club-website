@@ -5,9 +5,11 @@ import { HeartTwoTone } from '@ant-design/icons';
 
 const MENU_LIST = [
     {text: "Home", href: "/"},
-    {text: "About Us", href: "/about"},
-    {text: "Join Us", href: "/join"},
-    {text: "Offices & Members", href: "/people"}
+    {text: "Shelves", href: "/shelves"},
+    {text: "Calendar", href: "/calendar"},
+    {text: "Join", href: "/join"},
+    {text: "Offices & Members", href: "/people"},
+    {text: "About", href: "/about"}
 ];
 
 const Navbar = () => {
@@ -20,7 +22,7 @@ const Navbar = () => {
         <Link legacyBehavior href={"/"}>
           <a>
             <h1 className="logo">
-              <HeartTwoTone twoToneColor="#ffb6c1"/> <HeartTwoTone twoToneColor="#ffb6c1"/> <HeartTwoTone twoToneColor="#ffb6c1"/>
+              <HeartTwoTone twoToneColor="#8c0c0c"/> <HeartTwoTone twoToneColor="#8c0c0c"/> <HeartTwoTone twoToneColor="#8c0c0c"/>
               </h1>
           </a>
         </Link>
