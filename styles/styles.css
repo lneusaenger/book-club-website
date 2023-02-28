@@ -140,51 +140,32 @@ body{
     }
 
     .officer-card {
+      margin: 20px 20px 20px 20px;
+      border-radius: 10px;
+      width: 45rem;
+    }
+
+    .officer-image{
+      max-width: 15rem;
+      border-radius: 3rem;
+      justify-self: left;
+      margin: 5px 5px 5px 10px
+    }
+
+    .officers{
       display: flex;
-      flex-direction: row;
+      margin: 20px 20px 20px 20px;
+      justify-items: center;
       justify-content: center;
       align-items: center;
-      width: calc(50% - 20px);
-      height: 20rem;
-      margin: 10px;
-      border-radius: 10px;
-      box-sizing: border-box;
-      padding: 10px;
+    }
+
+    .card-details{
+      font-weight: 400;
+    }
+
+    .officers-heading{
+      font-size: 30px;
       text-align: center;
-    }
-
-  .officer-title-name{
-      width: 50%;
-    }
-
-    .card-content{
-      width: 50%;
-    }
-
-  .officer-title{
-      font-size: 2rem;
-      justify-content: center;
-      color: var(--brown);
-      text-align: center;
-      padding: 5px;
-    }
-
-    .officer-card .officer-name{
-      font-size: 1.5rem;
-      color: var(--darkbrown);
-      text-align: center;
-      padding: 5px
-    }
-
-    .officer-card .card-content{
-      font-size: 1rem;
-      color: var(--darkbrown);
-      text-align: center;
-      padding: 5px;
-    }
-
-    .officer-card .officer-img{
-      max-width: 15rem;
-      padding: 1rem;
-      border-radius: 3rem;
+      color: var(--darkbrown)
     }

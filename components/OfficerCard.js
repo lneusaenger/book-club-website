@@ -1,24 +1,66 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGoodreads } from "@fortawesome/free-brands-svg-icons"
+import { Card, Col, Row } from 'antd';
+import { useState } from 'react';
 
-function OfficerCard(props) {
-    return (
-        <div className="officer-card">
-            <div className = "officer-title-name">
-                <div className="officer-title"><b>{props.title}</b></div>
-                <div className="officer-name">
-                    {props.name}  <a className = "officer-goodreads" href={props.goodreads} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faGoodreads} />
-                    </a>
-                </div>
+function OfficerCard (props){
+    const { Meta } = Card;
+const tabList = [
+  {
+    key: 'fav1',
+    tab: 'Favorite #1',
+  },
+  {
+    key: 'fav2',
+    tab: 'Favorite #2',
+  },
+  {
+    key: 'fav3',
+    tab: 'Favorite #3',
+  },
+  {
+    key: 'fav4',
+    tab: 'Favorite #4',
+  },
+  {
+    key: 'fav5',
+    tab: 'Favorite #5',
+  },
+];
+const contentList = {
+  fav1: <p>first favorite book</p>,
+  fav2: <p>second favorite book</p>,
+  fav3: <p>third favorite book</p>,
+  fav4: <p>fourth favorite book</p>,
+  fav5: <p>fifth favorite book</p>,
+};
+  const [activeTabKey, setActiveTabKey] = useState('app');
+  const onTabChange = (key) => {
+    setActiveTabKey(key);
+  };
+  return (
+    <span>
+      <Card
+        className = "officer-card"
+        title={
+            <>
+            <h1>{props.name}</h1>
+            <h2>{props.title}</h2>
+            <div className = "card-details">
+            <a>Studying: {props.study}</a>
+            <p>Favorite Genres: {props.genres}</p>
             </div>
-            <div className="card-content">
-            <img className = "officer-img" src={props.img} alt={props.name} />
-                <div className="officer-studymajor"><b>Studying:</b> {props.study}</div>
-            </div>
-        </div>
-        //need to add shelf
-    );
-}
+            </>
+    }
+        extra={<img className = "officer-image" src = {props.img}/>}
+        tabList={tabList}
+        activeTabKey={activeTabKey}
+        onTabChange={onTabChange}
+      >
+        {contentList[activeTabKey]}
+      </Card>
+    </span>
+  );
+};
 
 export default OfficerCard;

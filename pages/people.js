@@ -6,10 +6,10 @@ export default function People() {
     const officers = require("../data/officers.json");
     return (
       <>
-      <Head>
-        <title>Officers</title>
-      </Head>
       <Navbar />
+      <h1 className = "officers-heading">
+        O F F I C E R S
+      </h1>
       <div className = "officers">
         {officers.map((officer)=>(
             <OfficerCard
@@ -18,6 +18,7 @@ export default function People() {
                 img = {officer.Img}
                 name={officer.First + " " + officer.Last}
                 study={officer.Study}
+                genres = {officer.Genres}
                 goodreads={officer.Goodreads}
                 favs = {officer.FavPath}
                 />
