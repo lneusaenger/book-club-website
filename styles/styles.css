@@ -18,7 +18,7 @@
   }
 
 body{
-  background-color: var(--creme);
+  background-color: white;
 }
 
 .welcome{
@@ -78,7 +78,7 @@ body{
     padding: 16px;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--creme);
+    background-color: white;
     color: var(--crimson);
   }
   .nav__menu-bar{
@@ -143,6 +143,7 @@ body{
       margin: 20px 20px 20px 20px;
       border-radius: 10px;
       width: 45rem;
+      text-align: center;
     }
 
     .officer-image{
@@ -168,4 +169,17 @@ body{
       font-size: 30px;
       text-align: center;
       color: var(--darkbrown)
+    }
+
+    .fav-card-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .fav-card-img {
+      flex: 0 0 auto;
+      margin-right: 16px;
+      float: left;
+      width: 7rem;
+      border-radius: 10px;
     }
