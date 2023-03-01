@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
-import { HeartTwoTone } from '@ant-design/icons';
+import { HeartOutlined } from '@ant-design/icons';
 
 const MENU_LIST = [
     {text: "Home", href: "/"},
@@ -22,7 +22,7 @@ const Navbar = () => {
         <Link legacyBehavior href={"/"}>
           <a>
             <h1 className="logo">
-              <HeartTwoTone twoToneColor="#8c0c0c"/> <HeartTwoTone twoToneColor="#8c0c0c"/> <HeartTwoTone twoToneColor="#8c0c0c"/>
+              <HeartOutlined/>
               </h1>
           </a>
         </Link>

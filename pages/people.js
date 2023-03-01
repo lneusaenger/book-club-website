@@ -1,6 +1,6 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import OfficerCard from "../components/OfficerCard";
-import Head from "next/head";
 
 export default function People() {
     const officers = require("../data/officers.json");
@@ -25,6 +25,7 @@ export default function People() {
                 />
             ))}
         </div>
+        <Footer />
       </>
     );
 }

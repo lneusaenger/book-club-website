@@ -101,7 +101,10 @@ function OfficerCard(props) {
         className = "officer-card"
         title={
             <>
-            <h1>{props.name}</h1>
+            <h1>{props.name} <a className = "officer-goodreads" href={props.goodreads} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGoodreads} />
+                </a>
+            </h1>
             <h2>{props.title}</h2>
             <div className = "card-details">
             <a>Studying: {props.study}</a>

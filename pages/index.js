@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
           <h1 className = "message">DUKE'S EXTREMELY PRETENIOUS BOOK CLUB</h1>
         </div>
         </div>
+        <Footer/>
     </>
   );
 }
