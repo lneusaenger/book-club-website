@@ -17,6 +17,7 @@ export default function People() {
                 title={officer.Title}
                 img = {officer.Img}
                 name={officer.First + " " + officer.Last}
+                first = {officer.First}
                 study={officer.Study}
                 genres = {officer.Genres}
                 goodreads={officer.Goodreads}
