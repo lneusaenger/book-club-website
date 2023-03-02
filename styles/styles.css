@@ -22,7 +22,7 @@ body{
 }
 
 .welcome{
-    font-family: 'Gloock';
+    font-family: 'Playfair Display';
     font-style: normal;
     display: flex;
     flex-direction: row;
@@ -162,6 +162,7 @@ body{
 
     .card-details{
       font-weight: 400;
+      margin: 7px;
     }
 
     .officers-heading{
@@ -187,4 +188,104 @@ body{
     .footer{
       text-align: center;
       color: grey;
+      padding-bottom: 15px;
+    }
+
+    .about-header{
+      text-align: center;
+    }
+
+    .about{
+      text-align: center;
+      padding: 10px;
+    }
+
+    .about .header{
+      padding: 10px 20px 20px 20px;
+      font-size: 50px;
+    }
+
+    .side-by-side{
+      display: flex;
+    }
+
+    .who .answer{
+      width: 50%;
+    }
+
+    .who .question{
+      width: 40%;
+    }
+
+    .answer{
+      text-align: center;
+    }
+
+    .delete-me{
+      min-height: 50rem;
+    }
+
+    .question{
+      color: var(--darkgreen);
+      justify-content: center;
+    }
+
+    .about .content{
+      padding: 2rem;
+    }
+
+    .shelves-heading{
+      text-align: center;
+      font-size: 50px;
+      padding: 10px 20px 0px 20px;
+    }
+
+    .shelves-container{
+      min-height: 50rem;
+      margin: 0px 10rem 0rem 10rem
+    }
+
+    .shelf{
+      margin: 2.5rem 5rem 2.5rem 5rem;
+      text-align: center;
+    }
+
+    .shelf .heading{
+      margin: 0px 0px 20px 0px;
+      font-size: 40px;
+    }
+
+    .shelf .contents {
+      border: 5px solid darkred;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .shelf .book {
+      width: 120px;
+      height: 160px;
+      background-size: cover;
+      margin: 10px;
+      position: relative;
+    }
+
+    .shelf .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .shelf .book:hover .title {
+      opacity: 1;
     }
