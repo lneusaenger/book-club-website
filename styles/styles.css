@@ -252,12 +252,15 @@ body{
 
     .shelf .heading{
       margin: 0px 0px 20px 0px;
-      font-size: 40px;
+      font-size: 40px;color: black;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .shelf .heading:hover {
+      color: var(--crimson);
     }
 
     .shelf .contents {
-      border: 5px solid darkred;
-      border-radius: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

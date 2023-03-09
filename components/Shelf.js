@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function Shelf(props) {
   const [books, setBooks] = useState([]);
+  const [showContents, setShowContents] = useState(false);
 
   useEffect(() => {
     fetch(props.jsonUrl)
@@ -29,24 +30,31 @@ function Shelf(props) {
         setBooks(books);
       });
   }, [props.jsonFile]);
-  
+
+  const toggleContents = () => {
+    setShowContents(!showContents);
+  }
 
   return (
-    <div className = "shelf">
-      <h2 className = "heading">{props.year}</h2>
-      <div className="contents">
-        {books.map((book, index) => (
+    <div className="shelf">
+      <h2 className="heading" onClick={toggleContents}>
+        {props.year}
+      </h2>
+      {showContents && (
+        <div className="contents">
+          {books.map((book, index) => (
             <div
-            key={index}
-            className="book"
-            style={{
-              backgroundImage: `url(${book.coverUrl})`
-            }}
-          >
-            <div className="title">{book.title}</div>
-          </div>
-        ))}
-      </div>
+              key={index}
+              className="book"
+              style={{
+                backgroundImage: `url(${book.coverUrl})`
+              }}
+            >
+              <div className="title">{book.title}</div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
