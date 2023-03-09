@@ -1,5 +1,6 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
     --creme: #fefbea;
@@ -22,44 +23,39 @@ body{
 }
 
 .welcome{
-    font-family: 'Playfair Display';
+    font-family: 'Montserrat';
     font-style: normal;
     display: flex;
-    flex-direction: row;
     font-size: 50px;
-    color: var(--darkbrown);
+    color: darkblue;
     align-items: center;
     font-weight: 600;
-    color: var(--darkbrown);
+    color: darkblue;
     width: 100%;
     justify-content: center;
     align-content: center;
-}
-
-.container-welcome{
-  width: 50%;
-  padding: 10px;
-}
-.welcome-img{
-  max-width: 50rem;
+    min-height: 30rem;
 }
 
 .welcome-message{
-  max-width: 50%;
-  font-family: 'Gloock';
+  font-family: 'Montserrat';
+  background-color: hotpink;
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
 }
-
-.message{
-  font-family: 'Gloock';
-}
-
 
 * {
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
-    font-family: 'Playfair display'
+    font-family: 'Montserrat'
   }
 
   a{
@@ -79,7 +75,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    color: var(--crimson);
+    color: teal;
   }
   .nav__menu-bar{
     display: flex;
@@ -168,7 +164,7 @@ body{
     .officers-heading{
       font-size: 30px;
       text-align: center;
-      color: var(--darkbrown);
+      color: darkblue;
       font-size: 50px;
     }
 
@@ -189,6 +185,7 @@ body{
       text-align: center;
       color: grey;
       padding-bottom: 15px;
+      font-size: 10px;
     }
 
     .about-header{
@@ -257,7 +254,7 @@ body{
     }
     
     .shelf .heading:hover {
-      color: var(--crimson);
+      color: teal;
     }
 
     .shelf .contents {
