@@ -5,7 +5,7 @@ export default function Join() {
     return (
       <>
         <Navbar />
-        <div className = "ABOUT">
+        <div className = "about">
             <h1 className = "header">J O I N &nbsp; U S</h1>
             <div className = "content delete-me">
                 <div className = "who side-by-side">

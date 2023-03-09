@@ -5,7 +5,7 @@ export default function Calendar() {
     return (
       <>
         <Navbar />
-        <div className = "ABOUT">
+        <div className = "about">
             <h1 className = "header">C A L E N D A R</h1>
             <div className = "content delete-me">
                 <div className = "who side-by-side">
