@@ -11,7 +11,7 @@ function OfficerCard(props) {
         try {
           const response = await fetch(props.favs);
           const data = await response.json();
-          const books = data.editions.slice(0, 5);
+          const books = data.entries.slice(0, 5);
           setFavBooks(books);
         } catch (error) {
           console.error(error);

@@ -8,6 +8,7 @@ function Shelf(props) {
     fetch(props.jsonUrl)
       .then(response => response.json())
       .then(data => {
+        console.log(data);
         const books = data.entries.map(thisBook => {
           const isbn = thisBook.isbn_13 || thisBook.isbn_10;
           let coverUrl = "";
