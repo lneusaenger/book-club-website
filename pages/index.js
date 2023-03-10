@@ -9,7 +9,7 @@ export default function HomePage() {
       <Navbar />
       <div className = "welcome">
         <div className = "welcome-message">
-          Duke's Extremely Pretentious Book Club
+          DUKE'S EXTREMELY PRETENTIOUS BOOK CLUB
           </div>
       </div>
         <Footer/>
