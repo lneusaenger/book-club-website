@@ -7,11 +7,8 @@ export default function Calendar() {
         <Navbar />
         <div className = "about">
             <h1 className = "header">C A L E N D A R</h1>
-            <div className = "content delete-me">
-                <div className = "who side-by-side">
-                    <span className = "question"><h1>What is this?</h1></span>
-                    <span className = "answer"><p>This will eventually house our calendar.</p></span>
-                </div>
+            <div className = "calendar">
+            <iframe className = "google-calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&title=Duke%20Amateurs%20Book%20Club&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZHVrZWFtYXRldXJzYm9va2NsdWJAZ21haWwuY29t&color=%23039BE5"></iframe>
             </div>
           </div>
           <Footer/>
